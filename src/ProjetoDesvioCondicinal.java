@@ -1,28 +1,43 @@
 import java.util.Scanner;
+import static java.lang.Math.*;
 public class ProjetoDesvioCondicinal {
 	static void Ex01() {
 		Scanner s = new Scanner(System.in);
+		
 		System.out.print("Digite um número: ");
 		int n = s.nextInt();
+		
 		System.out.println("");
+		
 		System.out.print(n%2==0 ? "O número é par":"O número é ímpar");	
+		
+		s.close();
 	}
 	
 	static void Ex02() {
 		Scanner s = new Scanner(System.in);
+		
 		System.out.print("Digite um número: ");
 		int n1 = s.nextInt();
+		
 		System.out.println("");
+		
 		System.out.print("Digite outro número: ");
 		int n2 = s.nextInt(), soma = n1+n2;
+		
 		System.out.println("");
-		System.out.printf("Soma = %d", soma);		
+		
+		System.out.printf("Soma = %d", soma);	
+		
+		s.close();
 	}
 	
 	static void Ex03() {
 		Scanner s = new Scanner(System.in);
+		
 		System.out.print("Digite um número: ");
 		int n = s.nextInt();
+		
 		System.out.println("");
 		
 		if (n>0) {
@@ -35,52 +50,80 @@ public class ProjetoDesvioCondicinal {
 		
 		else {
 			System.out.println("Número negativo");
-		}	
+		}
+		
+		s.close();
 	}
 	
 	static void Ex04() {
 		Scanner s = new Scanner(System.in);
+		
 		System.out.print("Digite um número de 0 a 10: ");
 		int n = s.nextInt();
+		
 		System.out.println("");
-		System.out.print(n>=0 ? "Aprovado":"Reprovado");	
+		
+		System.out.print(n>=6 ? "Aprovado":"Reprovado");	
+		
+		s.close();
 	}
 	
 	static void Ex05() {
 		Scanner s = new Scanner(System.in);
+		
 		System.out.print("Informe sua idade: ");
 		int n = s.nextInt();
+		
 		System.out.println("");
+		
 		System.out.print(n>=16 ? "Pode votar":"Não pode votar");
+		
+		s.close();
 		
 	}
 
 	static void Ex06() {
 		Scanner s = new Scanner(System.in);
+		
 		System.out.print("Digite um número: ");
 		int n = s.nextInt();
+		
 		System.out.println("");
+		
 		System.out.print("Digite um número: ");
 		int n2 = s.nextInt();
+		
 		System.out.println("");
+		
 		System.out.print("Digite um número: ");
 		int n3 = s.nextInt();
+		
 		System.out.println("");
+		
 		if (n>n2 && n>n3) {
 			System.out.printf("O número %d é o maior", n);
-		} else if (n2>n && n2>n3) {
+		} 
+		
+		else if (n2>n && n2>n3) {
 			System.out.printf("O número %d é o maior", n2);
-		} else {
+		} 
+		
+		else {
 			System.out.printf("O número %d é o maior", n3);
 		}
+		
+		s.close();
 	
 	}
 	
 	static void Ex07() {
 		Scanner s = new Scanner(System.in);
+		
 		System.out.print("Digite um número de 0 a 10: ");
 		int n = s.nextInt();
+		
 		System.out.println("");
+		
 		if  (n>=9) {
 			System.out.println("Excelente");	
 		}
@@ -95,22 +138,32 @@ public class ProjetoDesvioCondicinal {
 		
 		else {
 			System.out.println("Insuficiente");	
-		}		
+		}
+		
+		s.close();
 	}
 		
 	static void Ex08() {
 		Scanner s = new Scanner(System.in);
+		
 		System.out.print("Digite um número: ");
 		int n = s.nextInt();
-		System.out.println("");
-		System.out.print("Digite um número: ");
-		int n2 = s.nextInt();
-		System.out.println("");
-		System.out.print("Digite um número: ");
-		int n3 = s.nextInt();
+		
 		System.out.println("");
 		
-		System.out.println(n+n2>n3 && n2+n3>n && n+n3>n2 ? "O triângulo existe":"O triângulo não existe");	
+		System.out.print("Digite um número: ");
+		int n2 = s.nextInt();
+		
+		System.out.println("");
+		
+		System.out.print("Digite um número: ");
+		int n3 = s.nextInt();
+		
+		System.out.println("");
+		
+		System.out.println(n+n2>n3 && n2+n3>n && n+n3>n2 ? "O triângulo existe":"O triângulo não existe");
+		
+		s.close();
 		}
 		
 	
@@ -131,24 +184,34 @@ public class ProjetoDesvioCondicinal {
 		}
 		
 		else if (n!=n2 && n!=n3 && n2!=n3) {
-			System.out.println("Isósceles");	
+			System.out.println("Escaleno");	
 		}
 		
 		else {
-			System.out.println("Escaleno");
+			System.out.println("Isósceles");
 		}	
 	}
 		
 	static void Ex10() {
 		Scanner s = new Scanner(System.in);
-		String u = "Matheus", S = "150707";
+		
+		String u = "Matheus";
+		
+		int S = 150707;
+		
 		System.out.print("Usuário: ");
 		String usuario = s.next();
+		
 		System.out.println("");
+		
 		System.out.print("Senha: ");
-		String senha= s.next();
+		int senha= s.nextInt();
+		
 		System.out.println("");
-		System.out.println(u==usuario && S==senha ? "Acesso permitido":"Acesso negado");		
+		
+		System.out.println(u.equals(usuario) && S==senha ? "Acesso permitido":"Acesso negado");
+	
+		s.close();
 	}
 		
 	static void Ex11() {
@@ -229,7 +292,6 @@ public class ProjetoDesvioCondicinal {
 	}
 	
 	System.out.printf("O seu imposto será de %s em relação ao salário", imposto);
-	
 	s.close();	
 	}
 	
@@ -337,7 +399,9 @@ public class ProjetoDesvioCondicinal {
 		s.close();		
 	}
 		
-	static void Ex18() {Scanner s = new Scanner(System.in);
+	static void Ex18() {
+		
+	Scanner s = new Scanner(System.in);
 	System.out.print("Tente adivinhar o meu número: ");
 	int n = s.nextInt();
 	System.out.println("");
@@ -352,25 +416,78 @@ public class ProjetoDesvioCondicinal {
 	}
 	
 	else {
-		System.out.println
+		System.out.println("Parabéns! Voce adivinhou o número que eu estava pensando.");
 	}
 	
+	s.close();
 		
-			
 	}
 	
 	static void Ex19() {
+		Scanner s = new Scanner(System.in);
+		System.out.print("Peso [KG]: ");
+		float peso = s.nextFloat();
+		System.out.println("");
+		System.out.print("Altura [m]: ");
+		float h = s.nextFloat();
+		System.out.println(""); 
+		float imc = (float) (peso/(Math.pow(h, 2)));
 		
+		if (imc>=30) {
+			System.out.println("Obeso");
+		}
+		
+		if (imc>=25) {
+			System.out.println("Sobrepeso");
+		}
+		
+		else {
+			System.out.println("Normal");
+		}
+		
+		s.close();
+			
 	}
 	
 	static void Ex20() {
+		Scanner s = new Scanner(System.in);
+		System.out.print("Senha: ");
+		String senha = s.next();
+		String x = "Matheus";
+		int tentativas = 1;
+		System.out.println("");
 		
+		if (senha==x) {
+			System.out.println("Acesso permitido");
+		}
+		
+		else {
+			while (true) {
+				System.out.println("Senha incorreta. Tente novamente.");
+				System.out.print("Senha: ");
+				senha = s.next();
+				tentativas += 1;
+				
+				if (tentativas>3) {
+					System.out.println("Acesso negado");
+					break;
+				}
+				
+				else if (senha==x) {
+					System.out.println("Acesso permitido");
+					break;	
+				}	
+			}		
+		}
+		
+		s.close();
 	}
 	
 	
 	
 
 	public static void main(String[] args) {
+		Ex11();
 		
 
 	}
