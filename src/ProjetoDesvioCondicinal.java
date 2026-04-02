@@ -216,9 +216,12 @@ public class ProjetoDesvioCondicinal {
 		
 	static void Ex11() {
 		Scanner s = new Scanner(System.in);
+		
 		System.out.print("Ano: ");
 		int ano = s.nextInt();
+		
 		System.out.println("");
+		
 		if (ano%100==0 && ano%400==0) {
 			System.out.println("Ano bissexto");
 		}
@@ -228,35 +231,41 @@ public class ProjetoDesvioCondicinal {
 		}
 		
 		else {
-			System.out.println("Ano não ébissexto");		
+			System.out.println("Ano não é bissexto");		
 		}
 		s.close();		
 	}
 	
 	static void Ex12() {
 		Scanner s = new Scanner(System.in);
+		
 		System.out.print("Digite um número: ");
 		float n1 = s.nextFloat();
-		System.out.println("");
-		System.out.print("Digite outro número: ");
-		float n2 = s.nextFloat();
-		System.out.println("");
-		System.out.print("Escolha a operação [+. -, *, /]: ");
-		String operacao = s.next();
+		
 		System.out.println("");
 		
-		if (operacao == "+") {
+		System.out.print("Digite outro número: ");
+		float n2 = s.nextFloat();
+		
+		System.out.println("");
+		
+		System.out.print("Escolha a operação [+. -, *, /]: ");
+		String operacao = s.next();
+		
+		System.out.println("");
+		
+		if (operacao.equals("+")) {
 			float soma = n1 + n2;
 			System.out.printf("Soma: %.2f", soma);
 		}
 		
-		if (operacao == "-") {
+		if (operacao.equals("-")) {
 			float sub = n1 - n2;
 			System.out.printf("Soma: %.2f", sub);
 		}
 		
-		if (operacao == "*") {
-			float multiplicacao = n1 + n2;
+		if (operacao.equals("*")) {
+			float multiplicacao = n1 * n2;
 			System.out.printf("Multiplicação: %.2f", multiplicacao);
 		}
 		
@@ -268,11 +277,14 @@ public class ProjetoDesvioCondicinal {
 		s.close();	
 	}
 	
-	static void Ex13() {Scanner s = new Scanner(System.in);
+	static void Ex13() {
+	Scanner s = new Scanner(System.in);
 	
 	System.out.print("Informe o seu salário: R$ ");
 	float sal = s.nextFloat();
+	
 	System.out.println("");
+	
 	String imposto;
 	
 	if (sal>=3000) {
@@ -300,9 +312,10 @@ public class ProjetoDesvioCondicinal {
 		
 		System.out.print("Informe o preço do produto: R$ ");
 		float p = s.nextFloat();
-		System.out.println("");
-		String desconto;
 		
+		System.out.println("");
+		
+		String desconto;
 		
 		if (p<=100) {
 			desconto = "Sem desconto";
@@ -326,9 +339,10 @@ public class ProjetoDesvioCondicinal {
 		
 		System.out.print("Idade: ");
 		int i = s.nextInt();
-		System.out.println("");
-		String c;
 		
+		System.out.println("");
+		
+		String c;
 		
 		if (i<=12) {
 			c = "Criança";
@@ -352,14 +366,20 @@ public class ProjetoDesvioCondicinal {
 	
 	static void Ex16() {
 		Scanner s = new Scanner(System.in);
+		
 		System.out.print("Primeira nota: ");
 		float n1 = s.nextFloat();
+		
 		System.out.println("");
+		
 		System.out.print("Segunda nota: ");
 		float n2 = s.nextFloat();
+		
 		System.out.println("");
+		
 		System.out.print("Terceira nota: ");
 		float n3 = s.nextFloat();
+		
 		System.out.println("");
 		
 		float media = (n1+n2+n3)/3;
@@ -381,14 +401,18 @@ public class ProjetoDesvioCondicinal {
 		
 	static void Ex17() {
 		Scanner s = new Scanner(System.in);
+		
 		System.out.print("Valor salário: R$ ");
-		float sal = s.nextFloat();
+		float salario = s.nextFloat();
+		
 		System.out.println("");
+		
 		System.out.print("Valor das parcelas: R$ ");
-		float p = s.nextFloat();
+		float parcela = s.nextFloat();
+		
 		System.out.println(""); 
 		
-		if (sal/p <= 0.50f) {
+		if (parcela <= salario * 0.5f) {
 			System.out.println("Empréstimo aprovado");	
 		}
 		
@@ -402,16 +426,18 @@ public class ProjetoDesvioCondicinal {
 	static void Ex18() {
 		
 	Scanner s = new Scanner(System.in);
-	System.out.print("Tente adivinhar o meu número: ");
-	int n = s.nextInt();
-	System.out.println("");
-	int x = 59;
 	
-	if (n>x) {
+	System.out.print("Tente adivinhar o meu número: ");
+	int numero_usuario = s.nextInt();
+	
+	System.out.println("");
+	int numero_sistema = 59;
+	
+	if (numero_usuario>numero_sistema) {
 		System.out.println("Estou pensando em um número menor");
 	}
 	
-	else if (n<x) {
+	else if (numero_usuario<numero_sistema) {
 		System.out.println("Estou pensando em um número maior");
 	}
 	
@@ -425,13 +451,18 @@ public class ProjetoDesvioCondicinal {
 	
 	static void Ex19() {
 		Scanner s = new Scanner(System.in);
+		
 		System.out.print("Peso [KG]: ");
 		float peso = s.nextFloat();
+		
 		System.out.println("");
+		
 		System.out.print("Altura [m]: ");
-		float h = s.nextFloat();
+		float altura = s.nextFloat();
+		
 		System.out.println(""); 
-		float imc = (float) (peso/(Math.pow(h, 2)));
+		
+		float imc = (float) (peso/(Math.pow(altura, 2)));
 		
 		if (imc>=30) {
 			System.out.println("Obeso");
@@ -451,13 +482,16 @@ public class ProjetoDesvioCondicinal {
 	
 	static void Ex20() {
 		Scanner s = new Scanner(System.in);
+		
 		System.out.print("Senha: ");
 		String senha = s.next();
-		String x = "Matheus";
+		
+		String senha_correta = "Matheus";
 		int tentativas = 1;
+		
 		System.out.println("");
 		
-		if (senha==x) {
+		if (senha.equals(senha_correta)) {
 			System.out.println("Acesso permitido");
 		}
 		
@@ -473,7 +507,7 @@ public class ProjetoDesvioCondicinal {
 					break;
 				}
 				
-				else if (senha==x) {
+				else if (senha.equals(senha_correta)) {
 					System.out.println("Acesso permitido");
 					break;	
 				}	
@@ -487,9 +521,7 @@ public class ProjetoDesvioCondicinal {
 	
 
 	public static void main(String[] args) {
-		Ex11();
 		
-
 	}
 
 }
