@@ -5,11 +5,11 @@ public class ProjetoDesvioCondicinal {
 		Scanner s = new Scanner(System.in);
 		
 		System.out.print("Digite um número: ");
-		int n = s.nextInt();
+		int numero = s.nextInt();
 		
 		System.out.println("");
 		
-		System.out.print(n%2==0 ? "O número é par":"O número é ímpar");	
+		System.out.print(numero%2==0 ? "O número é par":"O número é ímpar");	
 		
 		s.close();
 	}
@@ -18,12 +18,12 @@ public class ProjetoDesvioCondicinal {
 		Scanner s = new Scanner(System.in);
 		
 		System.out.print("Digite um número: ");
-		int n1 = s.nextInt();
+		int numero1 = s.nextInt();
 		
 		System.out.println("");
 		
 		System.out.print("Digite outro número: ");
-		int n2 = s.nextInt(), soma = n1+n2;
+		int numero2 = s.nextInt(), soma = numero1+numero2;
 		
 		System.out.println("");
 		
@@ -36,15 +36,15 @@ public class ProjetoDesvioCondicinal {
 		Scanner s = new Scanner(System.in);
 		
 		System.out.print("Digite um número: ");
-		int n = s.nextInt();
+		int numero = s.nextInt();
 		
 		System.out.println("");
 		
-		if (n>0) {
+		if (numero>0) {
 			System.out.println("Número positivo");
 		} 
 		
-		else if (n==0) {
+		else if (numero==0) {
 			System.out.println("Zero");
 		}
 		
@@ -59,11 +59,11 @@ public class ProjetoDesvioCondicinal {
 		Scanner s = new Scanner(System.in);
 		
 		System.out.print("Digite um número de 0 a 10: ");
-		int n = s.nextInt();
+		int numero = s.nextInt();
 		
 		System.out.println("");
 		
-		System.out.print(n>=6 ? "Aprovado":"Reprovado");	
+		System.out.print(numero>=6 ? "Aprovado":"Reprovado");	
 		
 		s.close();
 	}
@@ -72,11 +72,11 @@ public class ProjetoDesvioCondicinal {
 		Scanner s = new Scanner(System.in);
 		
 		System.out.print("Informe sua idade: ");
-		int n = s.nextInt();
+		int numero = s.nextInt();
 		
 		System.out.println("");
 		
-		System.out.print(n>=16 ? "Pode votar":"Não pode votar");
+		System.out.print(numero>=16 ? "Pode votar":"Não pode votar");
 		
 		s.close();
 		
@@ -86,30 +86,30 @@ public class ProjetoDesvioCondicinal {
 		Scanner s = new Scanner(System.in);
 		
 		System.out.print("Digite um número: ");
-		int n = s.nextInt();
+		int numero = s.nextInt();
 		
 		System.out.println("");
 		
 		System.out.print("Digite um número: ");
-		int n2 = s.nextInt();
+		int numero2 = s.nextInt();
 		
 		System.out.println("");
 		
 		System.out.print("Digite um número: ");
-		int n3 = s.nextInt();
+		int numero3 = s.nextInt();
 		
 		System.out.println("");
 		
-		if (n>n2 && n>n3) {
-			System.out.printf("O número %d é o maior", n);
+		if (numero>numero2 && numero>numero3) {
+			System.out.printf("O número %d é o maior", numero);
 		} 
 		
 		else if (n2>n && n2>n3) {
-			System.out.printf("O número %d é o maior", n2);
+			System.out.printf("O número %d é o maior", numero2);
 		} 
 		
 		else {
-			System.out.printf("O número %d é o maior", n3);
+			System.out.printf("O número %d é o maior", numero3);
 		}
 		
 		s.close();
@@ -120,19 +120,19 @@ public class ProjetoDesvioCondicinal {
 		Scanner s = new Scanner(System.in);
 		
 		System.out.print("Digite um número de 0 a 10: ");
-		int n = s.nextInt();
+		int numero = s.nextInt();
 		
 		System.out.println("");
 		
-		if  (n>=9) {
+		if  (numero>=9) {
 			System.out.println("Excelente");	
 		}
 		
-		else if  (n>=7) {
+		else if  (numero>=7) {
 			System.out.println("Bom");	
 		}
 		
-		else if  (n>=5) {
+		else if  (numero>=5) {
 			System.out.println("Regular");	
 		}
 		
@@ -147,21 +147,21 @@ public class ProjetoDesvioCondicinal {
 		Scanner s = new Scanner(System.in);
 		
 		System.out.print("Digite um número: ");
-		int n = s.nextInt();
+		int numero = s.nextInt();
 		
 		System.out.println("");
 		
 		System.out.print("Digite um número: ");
-		int n2 = s.nextInt();
+		int numero2 = s.nextInt();
 		
 		System.out.println("");
 		
 		System.out.print("Digite um número: ");
-		int n3 = s.nextInt();
+		int numero3 = s.nextInt();
 		
 		System.out.println("");
 		
-		System.out.println(n+n2>n3 && n2+n3>n && n+n3>n2 ? "O triângulo existe":"O triângulo não existe");
+		System.out.println(numero+numero2>numero3 && numero2+numero3>numero && numero+numero3>numero2 ? "O triângulo existe":"O triângulo não existe");
 		
 		s.close();
 		}
@@ -170,20 +170,20 @@ public class ProjetoDesvioCondicinal {
 	static void Ex09() {
 		Scanner s = new Scanner(System.in);
 		System.out.print("Digite um número: ");
-		int n = s.nextInt();
+		int numero = s.nextInt();
 		System.out.println("");
 		System.out.print("Digite um número: ");
-		int n2 = s.nextInt();
+		int numero2 = s.nextInt();
 		System.out.println("");
 		System.out.print("Digite um número: ");
-		int n3 = s.nextInt();
+		int numero3 = s.nextInt();
 		System.out.println("");
 		
-		if (n==n2 && n==n3) {
+		if (numero==numero2 && numero==numero3) {
 			System.out.println("Equilátero");	
 		}
 		
-		else if (n!=n2 && n!=n3 && n2!=n3) {
+		else if (numero!=numero2 && numero!=numero3 && numero2!=numero3) {
 			System.out.println("Escaleno");	
 		}
 		
@@ -240,12 +240,12 @@ public class ProjetoDesvioCondicinal {
 		Scanner s = new Scanner(System.in);
 		
 		System.out.print("Digite um número: ");
-		float n1 = s.nextFloat();
+		float numero1 = s.nextFloat();
 		
 		System.out.println("");
 		
 		System.out.print("Digite outro número: ");
-		float n2 = s.nextFloat();
+		float numero2 = s.nextFloat();
 		
 		System.out.println("");
 		
@@ -255,22 +255,22 @@ public class ProjetoDesvioCondicinal {
 		System.out.println("");
 		
 		if (operacao.equals("+")) {
-			float soma = n1 + n2;
+			float soma = numero1 + numero2;
 			System.out.printf("Soma: %.2f", soma);
 		}
 		
 		if (operacao.equals("-")) {
-			float sub = n1 - n2;
+			float sub = numero1 - numero2;
 			System.out.printf("Soma: %.2f", sub);
 		}
 		
 		if (operacao.equals("*")) {
-			float multiplicacao = n1 * n2;
+			float multiplicacao = numero1 * numero2;
 			System.out.printf("Multiplicação: %.2f", multiplicacao);
 		}
 		
 		else {
-			float div = n1/n2;
+			float div = numero1/numero2;
 			System.out.printf("Divisão: %.2f", div);
 		}
 		
@@ -311,17 +311,17 @@ public class ProjetoDesvioCondicinal {
 		Scanner s = new Scanner(System.in);
 		
 		System.out.print("Informe o preço do produto: R$ ");
-		float p = s.nextFloat();
+		float preco = s.nextFloat();
 		
 		System.out.println("");
 		
 		String desconto;
 		
-		if (p<=100) {
+		if (preco<=100) {
 			desconto = "Sem desconto";
 		}
 		
-		else if (p<=500) {
+		else if (preco<=500) {
 			desconto = "10%";
 		}
 		
@@ -338,29 +338,29 @@ public class ProjetoDesvioCondicinal {
 		Scanner s = new Scanner(System.in);
 		
 		System.out.print("Idade: ");
-		int i = s.nextInt();
+		int idade = s.nextInt();
 		
 		System.out.println("");
 		
-		String c;
+		String classificacao;
 		
-		if (i<=12) {
-			c = "Criança";
+		if (idade<=12) {
+			classificacao = "Criança";
 		}
 		
-		else if (i<=17) {
-			c = "Adolescente";
+		else if (idade<=17) {
+			classificacao = "Adolescente";
 		}
 		
-		else if (i<=59){
-			c = "Adulto";
+		else if (idade<=59){
+			classificacao = "Adulto";
 		}
 		
 		else {
-			c = "Idoso";
+			classificacao = "Idoso";
 		}
 		
-		System.out.printf("A sua classificação é: %s", c);
+		System.out.printf("A sua classificação é: %s", classificacao);
 		s.close();		
 	}
 	
@@ -368,21 +368,21 @@ public class ProjetoDesvioCondicinal {
 		Scanner s = new Scanner(System.in);
 		
 		System.out.print("Primeira nota: ");
-		float n1 = s.nextFloat();
+		float nota1 = s.nextFloat();
 		
 		System.out.println("");
 		
 		System.out.print("Segunda nota: ");
-		float n2 = s.nextFloat();
+		float nota2 = s.nextFloat();
 		
 		System.out.println("");
 		
 		System.out.print("Terceira nota: ");
-		float n3 = s.nextFloat();
+		float nota3 = s.nextFloat();
 		
 		System.out.println("");
 		
-		float media = (n1+n2+n3)/3;
+		float media = (nota1+nota2+nota3)/3;
 		
 		if(media>=7) {
 			System.out.println("Aprovado");
